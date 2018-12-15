@@ -1,0 +1,167 @@
+body {
+  background-color: #ccc;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100%;
+  background-color: #181f2a;
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+.menuBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #1c2431;
+  box-sizing: border-box;
+}
+
+.menuBar__items {
+  display: flex;
+  font-size: 12px;
+}
+
+.menuBar__item {
+  margin-left: 20px;
+}
+
+.menuBar__logo {
+  width: 80px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .menuBar__items {
+    font-size: 16px;
+  }
+
+  .menuBar__item {
+    margin-left: 40px;
+  }
+
+  .menuBar__logo {
+    width: 120px;
+  }
+}
+.homeSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  width: 100%;
+  background-color: #1c2431;
+  box-sizing: border-box;
+}
+
+.homeSection::after {
+  content: " ";
+  position: absolute;
+  top: 250px;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 50%;
+  z-index: 0;
+}
+
+.homeSection::before {
+  content: " ";
+  position: absolute;
+  top: 380px;
+  background-color: #181f2a;
+  width: 100%;
+  height: 50%;
+  z-index: 0;
+}
+
+.homeSection__bigImage {
+  width: 300px;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.homeSection__mainTitle {
+  text-align: center;
+  line-height: 1.5em;
+  z-index: 1;
+}
+
+.homeSection__text {
+  width: 90%;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 1em;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .homeSection {
+    padding: 60px 20% 100px 20%;
+    width: 100%;
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .homeSection::after, .homeSection::before {
+    display: none;
+  }
+
+  .homeSection__bigImage {
+    width: 80%;
+    margin: 30px;
+  }
+
+  .homeSection__mainTitle {
+    font-size: 40px;
+  }
+
+  .homeSection__text {
+    width: 75%;
+    font-size: 20px;
+  }
+}
+.button {
+  color: white;
+  font-weight: 700;
+  margin: 20px;
+  padding: 15px 75px;
+  border: 0px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 25px 100px;
+    font-size: 18px;
+    border-radius: 35px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

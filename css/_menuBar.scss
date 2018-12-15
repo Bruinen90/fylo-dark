@@ -1,0 +1,37 @@
+.menuBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px $mobile-padding;
+    background-color: $color--introBackground;
+    box-sizing: border-box;
+}
+
+.menuBar__items {
+    display: flex;
+    font-size: 12px;
+}
+
+.menuBar__item {
+    margin-left: 20px;
+}
+
+.menuBar__logo {
+    width: 80px;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .menuBar__items {
+        font-size: 16px;
+    }
+
+    .menuBar__item {
+        margin-left: 40px;
+    }
+
+    .menuBar__logo{
+        width: 120px;
+    }
+}
