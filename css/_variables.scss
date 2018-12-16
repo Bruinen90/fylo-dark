@@ -6,6 +6,8 @@ $color--gradientCyan: hsl(176, 68%, 64%);
 $color--gradientBlue: hsl(198, 60%, 50%);
 $color--white: hsl(0, 0%, 100%);
 
+$gradient--standard: linear-gradient(to right, $color--gradientCyan, $color--gradientBlue);
+
 $dektop-min-width: 768px;
 $mobile-padding: 20px;
 $desktop-padding: 20%;

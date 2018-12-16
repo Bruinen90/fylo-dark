@@ -19,9 +19,9 @@
     <nav class="menuBar">
         <img src="./images/logo.svg" alt="Fylo logo" class="menuBar__logo" />
         <div class="menuBar__items">
-            <div class="menuBar__item">Features</div>
-            <div class="menuBar__item">Team</div>
-            <div class="menuBar__item">Sign In</div>
+            <a href="" class="menuBar__item">Features</a>
+            <a href="" class="menuBar__item">Team</a>
+            <a href="" class="menuBar__item">Sign In</a>
         </div>
     </nav>
 
@@ -223,6 +223,7 @@
                     type="email"
                     class="earlyAccessSection__input"
                     placeholder="email@example.com"
+                    required
                 />
                 <button class="button button--fullWidth">
                     Get Started For Free
@@ -245,11 +246,15 @@
             <div class="footerSection__contactSection">
                 <ion-icon name="call"></ion-icon>
                 <div class="footerSection__contactData">
-                    +1-543-123-4567
+                    <a href="tel: +1-543-123-4567" class="footerSection__contactLink">
+                        +1-543-123-4567
+                    </a>
                 </div>
                 <ion-icon name="mail"></ion-icon>
                 <div class="footerSection__contactData">
-                    example@fylo.com
+                    <a href="mailto: example@fylo.com" class="footerSection__contactLink">
+                        example@fylo.com
+                    </a>
                 </div>
             </div>
             <div class="footerSection__siteMapSection">
