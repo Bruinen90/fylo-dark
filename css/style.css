@@ -163,5 +163,48 @@ h1, h2, h3 {
     border-radius: 35px;
   }
 }
+.featuresSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.featuresSection__featureContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.featuresSection__featureImage {
+  margin: 15px;
+}
+
+.featuresSection__featureDescritpion {
+  width: 95%;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .featuresSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .featuresSection__featureContainer {
+    width: 50%;
+  }
+
+  .featuresSection__featureDescritpion {
+    width: 60%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
