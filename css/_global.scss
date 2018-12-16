@@ -13,6 +13,11 @@ h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
 }
 
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
 .mainContainer {
     display: flex;
     flex-direction: column;

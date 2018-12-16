@@ -1,0 +1,66 @@
+.earlyAccessSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        $color--mainBackground 0%,
+        $color--mainBackground 50%,
+        $color--footerBackground 50%,
+        $color--footerBackground 100%,
+        );
+}
+
+.earlyAccessSection__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: $color--introBackground;
+    width: 90%;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 2;
+}
+
+.earlyAccessSection__text {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+}
+
+.earlyAccessSection__input {
+    color: #eee;
+    padding: 20px;
+    width: 100%;
+    border-radius: 60px;
+    border: 0;
+}
+
+@media (min-width: $dektop-min-width) {
+    .earlyAccessSection {
+        width: 100%;
+    }
+
+    .earlyAccessSection__container {
+        width: 60%;
+    }
+
+    .earlyAccessSection__header {
+        font-size: 26px;
+    }
+
+    .earlyAccessSection__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .earlyAccessSection__input {
+        padding: 15px;
+        height: 3rem;
+        margin-right: 1rem;
+        flex: 2;
+    }
+}

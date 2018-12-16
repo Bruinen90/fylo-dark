@@ -5,7 +5,6 @@
     align-items: center;
     padding: 30px $mobile-padding;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .testimonialsSection__testimonialContainer {
@@ -14,9 +13,9 @@
     flex-direction: column;
     width: 100%;
     background-color: $color--testimonialsBackground;
+    border-radius: 5px;
     margin: 20px;
     padding: 25px;
-    box-sizing: border-box;
     font-size: 12px;
     line-height: 1.5rem;
 }
@@ -25,7 +24,7 @@
     position: absolute;
     content: " ";
     top: -30px;
-    left: 0;
+    left: 5px;
     width: 30px;
     height: 30px;
     background-color: $color--gradientCyan;
