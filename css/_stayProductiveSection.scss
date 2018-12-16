@@ -1,0 +1,45 @@
+.stayProductiveSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px $mobile-padding;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.stayProductiveSection__image {
+    width: 90%;
+}
+
+.stayProductiveSection__decriptionContainer {
+    width: 95%;
+}
+
+.stayProductiveSection__descriptionText {
+    font-size: 14px;
+}
+
+.stayProductiveSection__linkWithArrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid $color--gradientCyan;
+}
+
+.stayProductiveSection__linkText {
+    color: $color--gradientCyan;
+    margin-right: 10px;
+}
+
+@media (min-width: $dektop-min-width) {
+    .stayProductiveSection {
+        flex-direction: row;
+        padding: 60px;
+    }
+
+    .stayProductiveSection__header {
+        width: 60%;
+        font-size: 34px;
+    }
+}
