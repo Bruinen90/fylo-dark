@@ -25,10 +25,22 @@
     align-items: center;
     padding: 7px 0;
     border-bottom: 1px solid $color--gradientCyan;
+    background-image: linear-gradient($color--gradientCyan, $color--gradientCyan);
+    background-repeat: no-repeat;
+    background-position: 0 calc(16px + 1rem);
+    cursor: pointer;
+    transition: all .2s;
+    color: $color--gradientCyan;
 }
 
+.stayProductiveSection__linkWithArrow:hover {
+    color: $color--mainBackground;
+    background-position: 0 0;
+}
+
+
 .stayProductiveSection__linkText {
-    color: $color--gradientCyan;
+    color: inherit;
     margin-right: 10px;
 }
 
