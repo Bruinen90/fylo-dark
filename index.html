@@ -13,7 +13,7 @@
     </title>
 
 </head>
-<body>
+<body onscroll='scrolling()'>
 <div class="mainContainer">
 
     <nav class="menuBar">
@@ -24,6 +24,10 @@
             <a href="" class="menuBar__item">Sign In</a>
         </div>
     </nav>
+
+    <div class="scrollToTopButton" onClick="clickScrollToTop()">
+            <ion-icon name="arrow-dropup" class="scrollToTopButton__arrow"></ion-icon>
+    </div>
 
     <section class="homeSection">
         <img
@@ -286,6 +290,7 @@
     </section>
 </div>
 
+<script src="script.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
 </body>
 </html>
